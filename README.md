@@ -42,3 +42,14 @@ Coding Session Analysis: Generate simulated coding-session start and end times t
 Interactive Dashboard Development: Present important metrics, patterns, and analytical findings through an interactive dashboard.
 
 Decision Support: Use the findings to develop evidence-based suggestions for understanding work patterns and identifying areas for further investigation.
+
+2. ## Development Log
+
+### 2.1 Initial Dataset Setup
+
+- Created the project folder structure for source code, data, and documentation.
+- Prepared the dataset design document.
+- Set up Pandas and NumPy for Python-based data generation.
+- Implemented a script to generate 30 fictional developer profiles.
+- Saved the developer profile dataset to `data/raw/cognistream_developers.csv`.
+- Recorded Python package dependencies in `requirements.txt`.
