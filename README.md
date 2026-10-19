@@ -53,3 +53,22 @@ Decision Support: Use the findings to develop evidence-based suggestions for und
 - Implemented a script to generate 30 fictional developer profiles.
 - Saved the developer profile dataset to `data/raw/cognistream_developers.csv`.
 - Recorded Python package dependencies in `requirements.txt`.
+
+### 2.2 Project Progress
+
+- Created the project folder structure and documentation.
+- Generated 30 fictional developer profiles.
+- Configured a 90-day simulation period from January 1 to March 31, 2026.
+- Generated 15,000 synthetic developer activity records using Python, Pandas, and NumPy.
+- Assigned 500 activity records to each developer.
+- Performed initial checks on record counts, unique event IDs, developer distribution, and timestamps.
+
+### Current Dataset Files
+
+| File | Description |
+|---|---|
+| `data/raw/cognistream_developers.csv` | Synthetic developer profiles |
+| `data/raw/cognistream_activity.csv` | Synthetic developer activity events |
+
+### Important Note
+CogniStream uses entirely synthetic data. Its focus, cognitive-load, and flow-state indicators will be simulated analytical proxies, not direct measurements of a person's mental state or actual employee performance.

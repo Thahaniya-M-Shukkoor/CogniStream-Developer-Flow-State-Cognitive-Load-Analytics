@@ -67,9 +67,22 @@ This is a synthetic dataset, not a collection of real employee monitoring record
 
 ## 9. Project Status
 
-**Current stage:** Dataset schema and project structure preparation.
+**Current stage:** Synthetic developer profile and activity dataset generation.
 
-The dataset has not yet been generated or validated. Those tasks will be completed in subsequent project stages.
+Completed:
+- Project folder structure and initial documentation.
+- Synthetic developer profile generation.
+- Fixed simulation configuration for 90 days.
+- Generation of 15,000 synthetic activity records.
+- Balanced distribution of 500 activity records per developer.
+- Initial validation of record counts, identifiers, timestamps, and durations.
+
+Next steps:
+- Expand the activity schema with session, interruption, focus, cognitive-load, and flow-state indicators.
+- Generate related coding-session and interruption-event datasets.
+- Perform additional data quality checks and exploratory data analysis.
+- Prepare the data for Power BI dashboard development.
+
 
 ## 10. Implementation Progress
 
@@ -86,3 +99,43 @@ The generated output is saved as `data/raw/cognistream_developers.csv`.
 ### Dependencies
 
 A `requirements.txt` file was created to record the Python package environment for reproducibility.
+
+
+## 11. Activity Dataset Implementation
+
+### Generated File
+
+`data/raw/cognistream_activity.csv`
+
+### Current Schema
+
+| Column | Description |
+|---|---|
+| event_id | Unique identifier for each activity event |
+| employee_id | Identifier linking the event to a developer profile |
+| timestamp | Simulated activity start timestamp |
+| activity_type | Type of developer activity |
+| duration_minutes | Simulated activity duration |
+| is_simulated | Indicates that the record is synthetic |
+
+### Generation Rules
+
+- Simulation period: January 1 to March 31, 2026, inclusive.
+- Total records: 15,000.
+- Developer population: 30 fictional developers.
+- Activity records per developer: 500.
+- Activity start times are generated between 08:00 and 18:00.
+- Activity types include coding, code review, debugging, testing, documentation, and meetings.
+- NumPy's seeded random-number generator is used for reproducible generation.
+
+### Initial Validation
+
+The generated dataset was checked for its total row count, unique event IDs, number of developers, per-developer record counts, and observed timestamp range.
+
+All 15,000 event IDs are unique, all 30 developers have exactly 500 records each, and the observed timestamps fall within the planned simulation period.
+
+### Current Limitations
+
+The current activity dataset contains six columns. It does not yet include interruption events, context switching, coding-session identifiers, task complexity, focus scores, cognitive-load proxies, or flow-state indicators. These will be developed in subsequent stages.
+
+The dataset is entirely synthetic and must not be interpreted as real employee monitoring data.
