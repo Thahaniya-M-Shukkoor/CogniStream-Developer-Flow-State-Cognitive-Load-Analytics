@@ -11,3 +11,7 @@ venv/
 
 # Environment variables and secrets
 .env
+
+# Local backups and temporary test files
+data/raw/cognistream_activity_backup.csv
+data/raw/cognistream_activity_test.csv
