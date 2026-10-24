@@ -1,0 +1,7 @@
+activity_type,activity_count,average_duration_minutes,total_duration_minutes
+Testing,2540,37.08,94192
+Documentation,2540,37.31,94780
+Coding,2511,37.65,94551
+Meeting,2509,37.31,93614
+Debugging,2469,37.27,92009
+Code_Review,2431,37.71,91672
