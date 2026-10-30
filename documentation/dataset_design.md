@@ -67,21 +67,30 @@ This is a synthetic dataset, not a collection of real employee monitoring record
 
 ## 9. Project Status
 
-**Current stage:** Synthetic developer profile and activity dataset generation.
+**Current stage:** Synthetic data generation and exploratory data analysis completed through Day 9.
 
-Completed:
+### Completed
+
 - Project folder structure and initial documentation.
-- Synthetic developer profile generation.
-- Fixed simulation configuration for 90 days.
+- Synthetic developer profile generation for 30 fictional developers.
 - Generation of 15,000 synthetic activity records.
-- Balanced distribution of 500 activity records per developer.
-- Initial validation of record counts, identifiers, timestamps, and durations.
+- Workday-based activity scheduling across 64 working days.
+- Generation of 7,430 simulated focus sessions.
+- Generation of 1,920 daily context metric records.
+- Integration of daily developer metrics into a consolidated dataset containing 1,920 records and 20 columns.
+- Initial exploratory data analysis.
+- Univariate analysis of numerical and categorical variables.
+- Generation of descriptive summary files and visualizations.
 
-Next steps:
-- Expand the activity schema with session, interruption, focus, cognitive-load, and flow-state indicators.
-- Generate related coding-session and interruption-event datasets.
-- Perform additional data quality checks and exploratory data analysis.
-- Prepare the data for Power BI dashboard development.
+### Upcoming Steps
+
+- Bivariate analysis to investigate relationships between variables.
+- Multivariate analysis to explore combined effects and patterns.
+- Interpretation and documentation of analytical findings.
+- Preparation of insights and recommendations.
+- Power BI dashboard development.
+
+**Note:** Focus sessions and context-switching metrics are generated using predefined simulation rules. They are activity-based analytical proxies and should not be interpreted as direct measurements of actual developer focus or cognitive load.
 
 
 ## 10. Implementation Progress
