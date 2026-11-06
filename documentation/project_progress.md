@@ -193,6 +193,44 @@ The categorical analysis also examined the distribution of activity types, devel
 - The dataset is synthetic, and all findings describe the generated data rather than actual developer behaviour.
 
 ---
+### 2.10 — Bivariate Analysis
+
+**Script:** `src/bivariate_analysis.py`
+
+Conducted bivariate analysis to investigate relationships between pairs of numerical and categorical variables in the CogniStream datasets.
+
+**Analysis performed:**
+
+1. Pearson and Spearman correlation analysis between numerical variables.
+2. Correlation heatmap visualization.
+3. Scatter plot analysis of selected numerical relationships.
+4. Comparison of daily metrics across developer teams and experience levels.
+5. Comparison of activity duration across activity types.
+
+**Generated outputs:**
+
+- `data/processed/bivariate_pearson_correlation.csv`
+- `data/processed/bivariate_spearman_correlation.csv`
+- `data/processed/bivariate_correlation_summary.csv`
+- `data/processed/bivariate_group_summary.csv`
+- `data/processed/bivariate_activity_summary.csv`
+- `reports/figures/bivariate/`
+
+**Key findings:**
+
+- Total focus-active minutes and average focus-session duration showed a strong positive correlation (Pearson r = 0.899).
+- Total activity minutes and total focus-active minutes showed a moderate positive correlation (r = 0.628).
+- Code Review had the highest average activity duration (37.71 minutes), while Testing had the lowest (37.08 minutes).
+- Average focus-session counts were similar across teams.
+- Daily activity minutes showed relatively small differences across experience levels.
+
+**Interpretation and limitations:**
+
+The analysis identified several positive associations among activity and focus-session metrics. Some strong relationships involve mathematically related measures and should therefore be interpreted cautiously.
+
+Team and experience-level differences were descriptive comparisons, not statistical evidence of performance differences.
+
+All observations are based on synthetic data and cannot be generalized to actual developer behaviour. Correlation does not establish causation.
 
 ## 3. Current Project Structure
 
