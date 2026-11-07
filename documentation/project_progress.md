@@ -232,6 +232,42 @@ Team and experience-level differences were descriptive comparisons, not statisti
 
 All observations are based on synthetic data and cannot be generalized to actual developer behaviour. Correlation does not establish causation.
 
+### 2.11 — Multivariate Analysis
+
+**Script:** `src/multivariate_analysis.py`
+
+Performed multivariate analysis using Principal Component Analysis (PCA) to explore patterns across multiple numerical variables in the synthetic developer activity dataset.
+
+**Analysis performed:**
+
+1. Selected seven numerical metrics for PCA.
+2. Standardized numerical variables before analysis.
+3. Calculated principal components using Singular Value Decomposition (SVD).
+4. Examined explained and cumulative variance.
+5. Analysed component loadings.
+6. Compared PCA scores across developer teams and experience levels.
+
+**Key findings:**
+
+- The first principal component (PC1) explained 48.3% of total variance.
+- The second principal component (PC2) explained 21.4%.
+- The first two components together explained 69.7% of total variance.
+- The first three components explained 84.7%.
+- PC1 was strongly associated with focus-session duration and total activity minutes.
+- PC2 was primarily associated with unique activity types and context switches.
+
+**Generated outputs:**
+
+- `data/processed/pca_explained_variance.csv`
+- `data/processed/pca_component_loadings.csv`
+- `data/processed/pca_developer_scores.csv`
+- `data/processed/pca_group_summary.csv`
+- `reports/figures/multivariate/`
+
+**Limitations:**
+
+PCA identifies patterns of variation and does not establish causation. Some variables are mathematically related, which may influence component loadings. The analysis uses entirely synthetic data and cannot be interpreted as a direct measurement of actual developer productivity, flow state, or cognitive load.
+
 ## 3. Current Project Structure
 
 The main project components developed so far include:
